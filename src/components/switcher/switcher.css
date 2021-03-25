@@ -1,0 +1,68 @@
+@import '../../variables.css';
+div.switch {
+  grid-area: s;
+  font-size: .8rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: safe;
+  width: 100%;
+}
+
+.switch .text {
+  margin-inline: 1em;
+  flex-basis: auto;
+  display: inline-block;
+}
+
+.switcher {
+  position: relative;
+  width: 2.6rem;
+  height: 1.5rem;
+}
+
+.switcher input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient( 160deg, var(--bg-2), var(--bg-1));
+  -webkit-transition: .4s;
+  box-shadow: inset 2px -1px 3px -1px #00000060;
+  transition: .2s;
+  border-radius: 200px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  box-shadow: inset 2px -2px 3px 10px var(--shadow-1), inset 2px -2px 3px 1px var(--shadow-2);
+  ;
+  height: 1rem;
+  width: 1rem;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--off);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:focus+.slider {
+  box-shadow: inset 6px -4px 5px -3px var(--shadow-2);
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(1rem);
+  -ms-transform: translateX(1rem);
+  transform: translateX(1rem);
+  box-shadow: inset 6px -8px 4px 8px var(--shadow-1), inset 4px -6px 4px var(--shadow-2);
+}

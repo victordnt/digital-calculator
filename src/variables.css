@@ -1,0 +1,19 @@
+:root {
+    --shadow-1: #1e222530;
+    --shadow-2: #1e222560;
+    --light-1: #ffffff60;
+}
+
+:root .dark * {
+    --bg-1: #52585a;
+    --bg-2: #1e2327;
+    --bg-btn: #3A3D40;
+    --off: #ffffff60;
+}
+
+:root .light * {
+    --bg-1: #8f999c;
+    --bg-2: #a8c4db;
+    --bg-btn: #b9c2cc;
+    --off: #00000060;
+}

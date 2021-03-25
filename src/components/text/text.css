@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+.text {
+    mix-blend-mode: exclusion;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+}

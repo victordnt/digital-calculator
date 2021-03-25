@@ -1,0 +1,15 @@
+@import '../../variables.css';
+.button {
+    background-color: var(--bg-btn);
+    box-shadow: -1px 1px 0px 1px var(--shadow-2), 1px -1px 2px 1px var(--light-1), inset -1px 1px 1px 0px var(--shadow-2), inset -2px 2px 1px 0px var(--light-1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    height: 100%;
+}
+
+.button.equal {
+    grid-area: e;
+}

@@ -1,0 +1,19 @@
+@import '../../variables.css';
+.calculator {
+    background-image: radial-gradient(circle at top left, var(--bg-1), var(--bg-2));
+    border-radius: 0.8rem;
+    padding: 1.5rem 1rem;
+    font-size: 1.5em;
+    box-shadow: -.7rem .4rem 1rem var(--shadow-2);
+    display: grid;
+    grid-template-columns: 3.5rem 3.5rem 3.5rem 3.5rem;
+    grid-template-rows: 6rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem;
+    grid-template-areas: "d d d d" "s s s ." ". . . ." ". . . ." ". . . ." ". . . ." ". . . e" ". . . e";
+    justify-items: center;
+    align-items: center;
+    gap: 15px 10px;
+}
+
+/*max-height: 32rem;
+height: 32rem;
+min-height: 31rem;*/
