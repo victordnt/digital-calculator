@@ -12,8 +12,8 @@
 }
 
 :root .light * {
-    --bg-1: #8f999c;
-    --bg-2: #a8c4db;
-    --bg-btn: #b9c2cc;
+    --bg-1: #dff7ff;
+    --bg-2: #8badc9;
+    --bg-btn: #a0b1b9;
     --off: #00000060;
 }

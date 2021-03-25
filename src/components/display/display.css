@@ -11,7 +11,7 @@
     justify-content: end;
     outline: 1px solid var(--off);
     outline-offset: 7px;
-    box-shadow: inset 4px 6px 25px var(--shadow-2);
+    box-shadow: inset 4px 6px 25px -5px var(--shadow-1);
     transition: .6s;
     overflow: hidden;
     padding-bottom: 5px;
